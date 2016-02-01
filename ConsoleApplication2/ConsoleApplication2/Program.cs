@@ -17,7 +17,7 @@ namespace ConsoleApplication2
             var blobclient = storageAccount.CreateCloudBlobClient();
 
             // 检查container是否被创建，如果没有，创建container
-            var container = blobclient.GetContainerReference("helloworldcontainer");
+            var container = blobclient.GetContainerReference("stupidcontainer");
             container.CreateIfNotExists();
 
             // 新建一个blob，内容为"Hello World"
@@ -26,7 +26,7 @@ namespace ConsoleApplication2
             {
                 blob.UploadFromStream(fileStream);
             }*/
-            blob.UploadText("helloWorld");
+            blob.UploadText("stupid");
       
             // 读取并显示blob内容
             var blobcontent = blob.DownloadText();
