@@ -80,6 +80,7 @@ namespace DataTableStorage1Sample
             // When you delete a table it could take several seconds before you can recreate a table with the same
             // name - hence to enable you to run the demo in quick succession the table is not deleted. If you want 
             // to delete the table uncomment the line of code below. 
+            
             //DeleteTableAsync(table).Wait();
 
             Console.WriteLine("Press any key to exit");
