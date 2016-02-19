@@ -44,7 +44,7 @@ namespace RemoveDuplicatefromSortedArray
         static void Main(string[] args)
         {
             //int[] nums = { 1, 2, 2, 2, 3, 3, 3, 4, 4, 5 };
-            int[] array = RandomNums(200000);
+            int[] array = RandomNums(2000000);
             //int[] result1 = RemoveDuplicates1(array);
             int[] result2 = RemoveDuplicates2(array);
             int result3 = RemoveDuplicates3(array);
